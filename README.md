@@ -29,9 +29,13 @@ Use the provided URL link to access the Chatbot interface.
 In the input box on the Chatbot interface, type your query. Example queries include:
 
 "Query the death toll on October 1, 2021"
+
 "Calculate the total number of confirmed cases in October 2021"
+
 "Analyze and evaluate the overall pandemic situation in October 2021"
+
 "Generate charts such as bar graphs, line graphs, or mosaic plots for the number of confirmed cases in October 2021"
+
 "Predict the trend of infected cases over the next 5 days"
 
 
@@ -42,6 +46,23 @@ Once you’ve entered your query, click the Submit button on the right side of t
 After processing your query, the Chatbot will display the results on the interface. These results may include:
 
 Specific numerical data from your query
+
 Analytical and evaluative text descriptions
+
 Visualized charts
+
 Predictions of future trends along with explanatory details
+
+## Frequently Asked Questions (FAQ)
+### How do I know if my query was processed correctly?
+
+After submitting a query, the Chatbot will display a processing status. If an error message appears, check whether your input format is correct.
+
+### Does the Chatbot support multiple chart types?
+
+Yes, the system supports various chart types, such as bar graphs, line graphs, and mosaic plots. Users can choose the type that best suits their needs.
+
+### How reliable are the prediction results?
+
+The Chatbot uses historical data and prediction models to make forecasts. However, the results are for reference only, as real-world outcomes may be influenced by various factors.
+
