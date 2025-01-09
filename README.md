@@ -20,3 +20,28 @@ For example, user only ask the question, that 'Tell me the prediction for future
 <div align=center>
 <img src="https://github.com/Seailvia/AI-Chatbot-Design-with-Neural-Network/blob/main/Images%20for%20Readme/UI.png" width="400" height="350">
 </div>
+
+## User Guide
+### 1. Access the Chatbot
+Use the provided URL link to access the Chatbot interface.
+
+### 2. Enter Your Query
+In the input box on the Chatbot interface, type your query. Example queries include:
+
+"Query the death toll on October 1, 2021"
+"Calculate the total number of confirmed cases in October 2021"
+"Analyze and evaluate the overall pandemic situation in October 2021"
+"Generate charts such as bar graphs, line graphs, or mosaic plots for the number of confirmed cases in October 2021"
+"Predict the trend of infected cases over the next 5 days"
+
+
+### 3. Submit Your Query
+Once you’ve entered your query, click the Submit button on the right side of the input box to send your query to the Chatbot for processing.
+
+### 4. View Results
+After processing your query, the Chatbot will display the results on the interface. These results may include:
+
+Specific numerical data from your query
+Analytical and evaluative text descriptions
+Visualized charts
+Predictions of future trends along with explanatory details
