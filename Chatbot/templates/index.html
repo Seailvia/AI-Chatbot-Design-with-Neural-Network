@@ -1,0 +1,51 @@
+<!-- templates/index.html -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        Chatoria 2.0
+    </header>
+
+    <div class="container">
+        <div class="chatbox">
+            <div id="chat" class="chat-content">
+                <!-- Chat messages will appear here -->
+            </div>
+            <input type="text" id="user-input" placeholder="Type a message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to handle user message and chatbot response
+        function sendMessage() {
+            var userInput = document.getElementById('user-input').value;
+            var chatContent = document.getElementById('chat');
+            var userMessage = document.createElement('div');
+            userMessage.classList.add('chat-message', 'user-message');
+            userMessage.textContent = userInput;
+            chatContent.appendChild(userMessage);
+            document.getElementById('user-input').value = '';
+
+            fetch('/get_response', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ message: userInput })
+            })
+            .then(response => response.json())
+            .then(data => {
+                var botMessage = document.createElement('div');
+                botMessage.classList.add('chat-message', 'bot-message');
+                botMessage.textContent = data.response;
+                chatContent.appendChild(botMessage);
+                chatContent.scrollTop = chatContent.scrollHeight;
+            });
+        }
+    </script>
+</body>
+</html>
