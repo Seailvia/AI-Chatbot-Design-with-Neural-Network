@@ -1,6 +1,8 @@
 # AI-Chatbot-Design-with-Neural-Network
+## Abstract
 A Chatbot with UI design is created, according to some certain datasets (can be replaced). Through statistical analysis and PINN model, it can answer many kinds of questions. The structure of the chatbot can be used as a source of reference.
 
+## Structure
 The construction of our chatbot exemplifies the integration of back-end and front-end technologies to achieve a complete structure. Flask, HTML, and JavaScript each contribute distinct functionalities that, when combined, create an efficient chatbot system.
 
 Flask serves as the backbone of the chatbot, managing server-side logic and facilitating communication between the user interface and the chatbot’s natural language processing (NLP) model or pre-defined response logic. We can use Flask package in Python. It can interface with NLP libraries (here we use NLTK) to generate intelligent responses. Python scripts running under Flask preprocess input, pass it to the NLP model, and handle post-processing of the output. Flask uses Jinja2 templating to generate HTML pages dynamically. It can render the chat interface and provide contextual responses in real-time, so we can link our functions to Flask, in order to answer users' questions based on the analysis of certain data.
