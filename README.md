@@ -53,6 +53,12 @@ Visualized charts
 
 Predictions of future trends along with explanatory details
 
+## Usage
+The files in **static** and **templates** are the front-end design of the chatbot, you can change the UI if not satisfactory enough. Use the following order to activate the chatbot and its prediction function:
+```
+python app.py
+```
+
 ## Frequently Asked Questions (FAQ)
 ### How do I know if my query was processed correctly?
 
